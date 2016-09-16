@@ -11,6 +11,10 @@ module.exports = {
   format: 'umd',
   moduleName: 'EmojiUtil',
   plugins: [
-    babel()
+    babel({
+      babelrc: false,
+      presets: ['es2015-rollup'],
+      plugins: ['external-helpers']
+    })
   ].concat(productionConfig.plugins || [])
 };
