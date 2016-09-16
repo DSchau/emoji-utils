@@ -24,16 +24,16 @@ Emoji Utils is really a (small) subset of useful modules, broken apart into repl
 
 Determine if given string _contains_ an emoji.
 
-Returns: `boolean`
+**Returns: `boolean`**
 
 ### `isEmoji(string)`
 
 Determine if given string _is_ an emoji
 
-Returns: `boolean`
+**Returns: `boolean`**
 
 ### `replace(string, string|function)`
 
 Given a string, replace _each_ emoji occurrence with replacement
 
-Returns: `string` containing the (replaced) emoji
+**Returns: `string` containing the (replaced) emoji**
