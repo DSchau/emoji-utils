@@ -16,12 +16,24 @@ import EmojiUtils from 'emoji-utils';
 // do something great
 ```
 
-### API
+## API
 
 Emoji Utils is really a (small) subset of useful modules, broken apart into replacing content, and then validating if an emoji is contained within a string.
 
-|Method|Description|Returns|
-|:----:|-----------|:-----:|
-|`containsEmoji(string)`|Determine if given string contains an emoji|`boolean`|
-|`isEmoji(string)`|Determine if given string is an emoji|`boolean`|
-|`replace(string, string|function)`|Given a string, replace each found emoji with replacement|replaced `string`|
+### `containsEmoji(string)`
+
+Determine if given string _contains_ an emoji.
+
+Returns: `boolean`
+
+### `isEmoji(string)`
+
+Determine if given string _is_ an emoji
+
+Returns: `boolean`
+
+### `replace(string, string|function)`
+
+Given a string, replace _each_ emoji occurrence with replacement
+
+Returns: `string` containing the (replaced) emoji
