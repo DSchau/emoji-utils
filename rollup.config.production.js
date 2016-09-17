@@ -1,8 +1,10 @@
 const uglify = require('rollup-plugin-uglify');
 
-module.exports = {
-  dest: 'dist/emoji-util.min.js',
-  plugins: [
-    uglify()
-  ]
-};
+const baseConfig = require('./rollup.config');
+
+baseConfig.dest = 'dist/emoji-util.min.js';
+baseConfig.plugins = baseConfig.plugins.concat([
+  uglify()
+]);
+
+module.exports = baseConfig;
